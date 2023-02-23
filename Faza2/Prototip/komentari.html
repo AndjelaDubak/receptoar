@@ -1,0 +1,43 @@
+<!--Autor: Andjela Dubak 18/0658-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptoar</title>
+    <link type="image/png" href="img/logo.png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/dodatni.css">
+    <script type="text/javascript" src="js/jezik.js"></script>
+</head>
+<body>
+    <div class="background">
+        <h1></h1>
+    </div>
+    <div class="komentari-container">
+        <div class="komentari-header">
+            <h3 id="naslov"></h3>
+        </div>
+        <div id="comments">
+            <div class="single-comment">
+                <img id="user" src="img/user.png">
+                <div class="tekst">
+                    <font id="komentar"></font>
+                </div>              
+                <img id="like" src="img/like.jpg" onclick="document.getElementById('like').src='img/like1.png'">      
+            </div>
+            <div class="single-comment">
+                <img id="user" src="img/user.png">
+                <div class="tekst">
+                    <font id=komentar1></font>
+                </div>
+                <img id="like1" src="img/like.jpg" onclick="document.getElementById('like1').src='img/like1.png'">
+            </div>
+        </div>
+        <div id="write-comment">
+            <font id="unosKom"></font>
+        </div>
+    </div>
+    <script type="text/javascript">start();</script>
+</body>
+</html>

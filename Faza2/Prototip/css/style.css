@@ -1,0 +1,600 @@
+/*Autor: Aleksandar Dopudja 18/0118*/
+
+#lista input{
+    width: 50px;
+}
+
+#opis{
+    width: 100%;
+}
+
+#dowA:hover{
+    content: url(../img/dow.png);
+}
+
+#upgradeA:hover{
+    content: url(../img/upgrade_account1.png);
+}
+
+#deleteA:hover{
+    content: url(../img/delete_account1.png);
+}
+
+#rezimN {
+    width: 10%;
+    /*background-size: 100% 100%;*/
+    height: 100%;
+    min-height: 20px;
+    min-width:35px;
+    max-height: 30px;
+    max-width: 50px;
+    float: left;
+}
+
+img#rezimN:hover {
+    content: url(../img/dan1.png);
+}
+
+#rezim {
+    width: 10%;
+    /*background-size: 100% 100%;*/
+    height: 100%;
+    min-height: 20px;
+    min-width:35px;
+    max-height: 30px;
+    max-width: 50px;
+    float: left;
+}
+
+img#rezim:hover {
+    content: url(../img/noc1.png);
+}
+
+img#logoSlika:hover{
+    content: url(../img/logo2.png);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 1%;
+    margin-top: 138px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4vw;
+    color: #04001A;
+    font-family: Segoe Print;
+  }
+  body {
+      margin: 0;
+      padding: 0;
+  }
+  table#t {
+  /*	border-bottom: 2px solid white;*/
+      height: 10%;
+      width: 100%;
+      background-color: #04001A;
+      margin-bottom: 2px;
+  }
+  table#t1 {
+      padding: 0;
+      height: 89%;
+      width: 270px;
+      background-color: #04001A;
+      /*border-left: 2px solid white;*/
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover { 
+    /*color: #B0E0E6;*/
+    font-size: 102%;
+    border-radius: 8px;
+  }
+  
+  li#l1 {
+      margin: 8px;
+      font-size: 1.20em;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: Arial;
+  }
+  
+  
+  ul#u1 {
+    list-style-type: none;
+    margin-left: 6px;
+    margin-top: 18px;
+    color: #FFFFFF;
+    padding: 0;
+  }
+  
+  img#pozadina{
+      height: 90%;
+      width: 100%;
+  }
+  table#rezim{
+      min-width: 140px;
+  }
+  table#t2 {
+      width: calc(100% - 270px);
+      height: 89%;
+      border-right: 2px solid white;
+  }
+  
+  .noc b {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+  }
+  
+  .noc {
+      text-align: center;
+  }
+  
+  li#l2 {
+      margin: 8px;
+      font-size: 1.20em;
+      text-decoration: none;
+      font-family: Arial;
+  }
+  
+  img#zastave:hover {
+      height: 18px;
+      width: 35px;
+  }
+  
+  td#naziv {
+      min-width: 330px;
+  }
+  #wrapper {
+      background-color: white;
+      width: 100%;
+  }
+  
+  body {
+      margin: 0;
+      padding: 0;
+  }
+  
+  #header {
+      height: 10%;
+      width: 100%;
+      min-height: 200px;
+      background-color: #eb6c01ff;
+      margin-bottom: 2px;
+      min-height: 80px;
+      min-width: 100px;
+      position: fixed;
+  }
+
+  #headerNoc {
+    height: 10%;
+    width: 100%;
+    min-height: 200px;
+    background-color: rgb(32, 24, 16);
+    margin-bottom: 2px;
+    min-height: 80px;
+    min-width: 100px;
+    position: fixed;
+}
+  
+  #logo {
+      width: 10%;
+      /*background-size: 100% 100%;*/
+      height: 100%;
+      min-height: 80px;
+      min-width: 110px;
+      max-height: 100px;
+      max-width: 140px;
+      float: left;
+      /*margin: 5px;*/
+  }
+  
+  #logo img {
+      width: 67%;
+      height: 100%;
+      padding-left: 20px;
+  }
+  
+  #name {
+      width: 30%;
+      font-size: 15px;
+      font-family: Ink Free;
+      color: white;
+      font-weight: bold;
+      height: 100%;
+      text-align:left;
+      float: left;
+  }
+  
+  #change {
+      width: 60%;
+      height: 100%;
+      float: left;
+  }
+  
+  a {
+      font-family: Arial;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+  }
+  
+  #change table {
+      float: right;
+      margin-top: 16px;
+  }
+  #change font{
+      font-size:20px;
+  }
+  
+  #change font:hover{
+      background-color: #000000;
+      border-radius: 8px;
+  }*
+  #menu a:hover { 
+    background-color:rgba(255, 151, 66, 0.9);
+    /*color: #B0E0E6;*/
+    font-size: 102%;
+    border-radius: 8px;
+  }
+  
+  #flags img{
+      height: 15px;
+      width: 20px;
+      padding: -5px;
+  }
+  
+  #flags img:hover {
+      height: 16px;
+      width: 23px;
+  }
+
+  #main {
+      margin-left: 0;
+      width: calc(82% + 0px);
+      max-width: calc(100% - 270px);
+      height: calc(90% + 17px);
+      position: fixed;
+      right: 0;
+      bottom: -17px;
+      border-top: 2px solid white;
+      /*background-color: #B0BEC5;*/
+      background-image: url(../img/pozadina1.jpg);
+      background-size: 100% 100%;
+      float: left;
+      overflow: scroll;
+  }
+
+  #main1 {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: calc(90% + 17px);
+    position: fixed;
+    left: 0;
+    bottom: -17px;
+    border-top: 2px solid white;
+    /*background-color: #B0BEC5;*/
+    background-image: url(../img/pozadina1.jpg);
+    background-size: 100% 100%;
+    float: left;
+    overflow: scroll;
+  }
+
+  #main1noc {
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: calc(90% + 17px);
+    position: fixed;
+    left: 0;
+    bottom: -17px;
+    border-top: 2px solid white;
+    /*background-color: #B0BEC5;*/
+    background-image: url(../img/pozadinaNoc.jpg);
+    background-size: 100% 100%;
+    float: left;
+    overflow: scroll;
+  }
+
+  #mainnoc {
+      margin-left: 0;
+      width: calc(82% + 0px);
+      max-width: calc(100% - 270px);
+      height: calc(90% + 17px);
+      position: fixed;
+      right: 0;
+      bottom: -17px;
+      border-top: 2px solid white;
+      background-image: url(../img/pozadinaNoc.jpg);
+      background-size: 100% 100%;
+      float: left;
+      overflow: scroll;
+  }	
+  #main h2 {
+      text-align:center;
+      vertical-align:top;
+      color:white;
+      font-size: 40px;
+      font-family: Ink Free;
+      text-decoration: overline underline;
+      text-underline-offset: 5px;
+  }
+  
+  #menu {
+      width: 18%;
+      height: 90%;
+      min-width: 270px;
+      background-color: black;
+      opacity: .8;
+      float: left;
+      left: 0;
+      bottom: 0;
+      border-top: 2px solid white;
+      position: fixed; 
+  }
+  
+  ul {
+      list-style-type: none;
+      padding-left: 6px;
+      padding-top: 18px;
+      margin: 8px;
+      font-size: 1.20em;
+  }
+
+  #lista{
+      padding-top: 0px;    
+  }
+
+  
+  
+  
+  #mainnoc h2 {
+    text-align:center;
+    vertical-align:top;
+    color:white;
+    font-size: 40px;
+    font-family: Ink Free;
+    text-decoration: overline underline;
+    text-underline-offset: 5px;
+  }
+  
+  .linoc a{
+      font-family: Arial;
+      color: white;
+      font-weight: normal;
+      text-decoration: none;
+  }
+  
+  .all{
+      width: 550px;
+      margin: auto;
+      text-align: center;
+      z-index:-1;
+      /*background-color: turquoise;*/
+  }
+  .single-item {
+      width: 35%;
+      min-width: 600px;
+      min-height: 350px;
+      background: rgba(255, 255, 255, 0.9);
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-top: 5%;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      /*border: 2px black solid;*/
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .single-itemnoc{
+      width: 35%;
+      min-width: 600px;
+      min-height: 350px;
+      background: rgba(26, 25, 24, 0.9);
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-top: 5%;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border: 2px black solid;
+  }
+  
+  .single-item h1{
+      font-size: 20;
+      padding-left: 0;	
+      text-align: left;
+      color: black;
+      font-family: Arial;
+      font-weight: bold;
+      text-align: left;
+      margin-left: 5px;
+      text-decoration: underline;	
+      color: #04001A;	
+  }
+
+  .single-itemnoc h3{
+      color: #FFFFFF;
+  }
+
+  .single-itemnoc li{
+    color: #FFFFFF;
+  }
+
+   .zaglavlje{
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+   }
+
+  .single-item .zaglavlje img{
+    height: 40px;
+    width: 40px;
+    padding-left: 50px;
+  }
+
+  .single-itemnoc .zaglavlje img{
+    height: 40px;
+    width: 40px;
+    padding-left: 50px;
+  }
+
+  .single-itemnoc h1{
+      font-size: 20;
+      padding-left: 0;	
+      text-align: left;
+      color: black;
+      font-family: Arial;
+      font-weight: bold;
+      text-align: left;
+      margin-left: 5px;
+      text-decoration: underline ;	
+      color: white;	
+  }
+  .all h2{
+      font-family: Arial;
+      font-size:20;
+      text-align:center;
+      font-weight:bold;
+      color: #04001A;
+  }
+  
+  img#post {
+      width: 450px;
+      height: 400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 8px;
+      border: 3px black solid;
+  }
+  /*img#post:hover {
+      width: 472px;
+      height: 420px;
+  }*/
+  img#like {
+      width: 40px;
+      height: 40px;
+      margin-left: 50px;
+      display:flex;
+      align-items:center;
+  }
+  img#like:hover {
+      content: url(../img/like1.png);
+      
+  }
+  img#comment{
+      width: 40px;
+      height: 40px;
+      margin-right: 50px;	
+      display:flex;
+      align-items:center;
+  }
+  img#comment:hover{
+    content: url(../img/kom.png);
+  }
+
+  a#komentari{
+    background: transparent;
+  }
+  a#komentarinoc{
+      background-color:transparent
+  }
+  /*a#komentari:hover{
+      background-color:#B0BEC5;
+  }*/
+  /*a#komentarinoc:hover{
+      background-color:rgba(26, 25, 24, 0.9);
+  }*/
+  .meta{
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .meta button{
+      margin-left: 30px;
+  }
+  
+  .meta a{
+      margin-left: auto;
+  }
+  
+  .spisak table{
+      background-color:rgba(255, 255, 255, 0.9);
+      position: absolute;
+      width: calc(100% - 410px);
+      margin-left: 200px;
+      margin-top: 180px;
+      font-size: 1.20em;
+      text-decoration: none;
+      font-family: Arial;
+  }
+  .spisaknoc table{
+    background-color:rgba(255, 255, 255, 0.9);
+      position: absolute;
+      width: calc(100% - 270px);
+      margin: 8px;
+      font-size: 1.20em;
+      text-decoration: none;
+      font-family: Arial;
+  }
+  
+  .spisak td{
+      width: 20%;
+  }
+  .spisaknoc td{
+      width: 20%;
+  }
+  
+  .spisak img{
+      height: 35px;
+      vertical-align:middle;
+  }
+  .spisaknoc img{
+      height: 35px;
+      vertical-align:middle;
+  }
+  .spisak font {
+      margin-bottom: 10px;
+      font-size: 1.10em;
+  }
+  .spisaknoc font {
+      margin-bottom: 10px;
+      font-size: 1.10em;
+  }
+  td#kor_ime {
+      font-size: 1.20em;
+      font-weight: bold;
+      text-decoration: overline underline;
+      text-underline-offset: 5px;
+      text-align: center;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #FFFFFF; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 151, 66, 0.9);;
+  }

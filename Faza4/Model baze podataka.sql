@@ -1,0 +1,92 @@
+CREATE TABLE GLAS
+(
+	ID_objava            INTEGER NOT NULL,
+	ID_korisnik          INTEGER NOT NULL,
+	Glasao               boolean NULL
+);
+
+ALTER TABLE GLAS
+ADD CONSTRAINT XPKGLAS PRIMARY KEY (ID_objava,ID_korisnik);
+
+CREATE TABLE KOMENTAR
+(
+	ID_komentar          INTEGER NOT NULL,
+	ID_objava            INTEGER NOT NULL,
+	Tekst                VARCHAR(255) NULL,
+	Broj_lajkova         INTEGER NULL
+);
+
+ALTER TABLE KOMENTAR
+ADD CONSTRAINT XPKKOMENTAR PRIMARY KEY (ID_komentar);
+
+CREATE TABLE KORISNIK
+(
+	ID_korisnik          INTEGER NOT NULL,
+	Ime                  VARCHAR(18) NULL,
+	Prezime              VARCHAR(18) NULL,
+	Email                VARCHAR(50) NULL,
+	Korisnicko_ime       VARCHAR(18) NULL,
+	Lozinka              VARCHAR(18) NULL,
+	Broj_pobeda          INTEGER NULL,
+	Kategorija_korisnika CHAR(1) NULL
+);
+
+ALTER TABLE KORISNIK
+ADD CONSTRAINT XPKKORISNIK PRIMARY KEY (ID_korisnik);
+
+CREATE TABLE LAJK
+(
+	ID_korisnik          INTEGER NOT NULL,
+	ID_komentar          INTEGER NOT NULL,
+	Lajkovao             boolean NULL
+);
+
+ALTER TABLE LAJK
+ADD CONSTRAINT XPKLAJK PRIMARY KEY (ID_korisnik,ID_komentar);
+
+CREATE TABLE OBJAVA
+(
+	ID_objava            INTEGER NOT NULL,
+	ID_korisnik          INTEGER NOT NULL,
+	ID_tema              INTEGER NOT NULL,
+	Fotografija          VARCHAR(255) NULL,
+	Opis                 VARCHAR(255) NULL,
+	Broj_glasova         INTEGER NULL,
+	Pobednicka           boolean NULL,
+	Sastojci             VARCHAR(255) NULL,
+	Vreme                TIMESTAMP NULL
+);
+
+ALTER TABLE OBJAVA
+ADD CONSTRAINT XPKOBJAVA PRIMARY KEY (ID_objava);
+
+CREATE TABLE TEMA
+(
+	ID_tema              INTEGER NOT NULL,
+	Naziv                VARCHAR(50) NULL,
+	Aktuelna             boolean NULL
+);
+
+ALTER TABLE TEMA
+ADD CONSTRAINT XPKTEMA PRIMARY KEY (ID_tema);
+
+ALTER TABLE GLAS
+ADD CONSTRAINT FK_faa8ff1b_43cb51e4_85bb30b2_1f6e040b_0_ FOREIGN KEY (ID_objava) REFERENCES OBJAVA (ID_objava);
+
+ALTER TABLE GLAS
+ADD CONSTRAINT FK_1f46a86b_4994f780_36bcc98b_d5dff456_0_ FOREIGN KEY (ID_korisnik) REFERENCES KORISNIK (ID_korisnik);
+
+ALTER TABLE KOMENTAR
+ADD CONSTRAINT FK_22c1bcb4_49d1b304_d2625b9a_239a50e7_0_ FOREIGN KEY (ID_objava) REFERENCES OBJAVA (ID_objava);
+
+ALTER TABLE LAJK
+ADD CONSTRAINT FK_1bf3eb44_4b240668_c00defa8_ff7e3714_0_ FOREIGN KEY (ID_korisnik) REFERENCES KORISNIK (ID_korisnik);
+
+ALTER TABLE LAJK
+ADD CONSTRAINT FK_1838a489_48a01447_2116ea9_eea7e2f2_0_ FOREIGN KEY (ID_komentar) REFERENCES KOMENTAR (ID_komentar);
+
+ALTER TABLE OBJAVA
+ADD CONSTRAINT FK_c382b594_4fba2db7_74cee780_45f915fa_0_ FOREIGN KEY (ID_tema) REFERENCES TEMA (ID_tema);
+
+ALTER TABLE OBJAVA
+ADD CONSTRAINT FK_dd62a42b_4ba5483e_48fd8f97_9760f7b0_0_ FOREIGN KEY (ID_korisnik) REFERENCES KORISNIK (ID_korisnik);
